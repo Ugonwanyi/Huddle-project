@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url('assets/bg-mobile.svg');
+    backgroung repeat; no-repeat;
+    background colour: hsl(257, 40%, 49%)
+    background-size: cover; */
+  background: url(/assets/bg-mobile.svg) no-repeat hsl(257, 40%, 49%);
+  font-family: "Open Sans", sans-serif;
+}
+
+/* utils */
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* nav styling */
+nav img {
+  width: 41%;
+}
+
+nav {
+  padding-top: 2rem;
+}
+
+/* header styling */
+
+.header {
+  margin-top: 30px;
+  /* height: 29rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: */
+}
+header img {
+  max-width: 100%;
+  /* max height:50rem; */
+}
+
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.header-inner h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  /* text-align: center; */
+}
+
+.header-inner p {
+  color: rgb(174, 172, 172);
+  width: 94%;
+  /* text-align:center */
+}
+
+.header-inner button {
+  width: 70%;
+  height: 2rem;
+  margin: auto;
+  border: none;
+  border-radius: 2rem;
+  color: hsl(300, 92%, 36%);
+  box-shadow: -1px 2px 5px rgb(7, 172, 172);
+}
+
+/* for desktop design */
+@media (min-width: 1024px) {
+  body {
+    background: url(/assets/bg-desktop.svg) no-repeat hsl(257, 40%, 49%);
+  }
+  /* nav styling */
+  nav img{
+    width: 18%;
+  }
+
+  /* header styling */
+  .header {
+    flex-direction: row;
+  }
+
+  .header img {
+    width: 57%;
+  }
+
+  .header-inner {
+    text-align: start;
+    width: 38%;
+    padding-top: 3rem;
+  }
+
+  .header-inner button {
+    margin: 0;
+    width: 30%;
+    color: hsl(257, 40%, 49%);
+  }
+
+  .header-inner h2 {
+    width: 80%;
+    font-size: 2rem;
+  }
+
+  .header-inner p {
+    color: rgb(217, 211, 211);
+    line-height: 1.7rem;
+    /* width:94% */
+    /* text-align: center; */
+  }
+}
